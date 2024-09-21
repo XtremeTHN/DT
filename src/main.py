@@ -24,4 +24,4 @@ if args.send:
     c.send_file(args.send)
 
 if args.recieve:
-    Server().recieve()
+    Server(args.address, args.port).recieve()
