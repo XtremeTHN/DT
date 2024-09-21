@@ -15,7 +15,7 @@ parser.add_argument("-s", "--send", action="store", help="Sends something to a s
 parser.add_argument("-r", "--recieve", action="store_true", help="Recieve a file")
 
 parser.add_argument("-a", "--address", default="127.0.0.1", help="The address of the server to create/connect")
-parser.add_argument("-p", "--port", default="5050", help="The port of the server or the device to connect")
+parser.add_argument("-p", "--port", default="5050", type=int, help="The port of the server or the device to connect")
 
 args: Args = parser.parse_args()
 
